@@ -146,7 +146,13 @@ class MutableLiveData<T> extends LiveData<T> {
       _isChanging = true;
       final old = _value;
       _value = v;
-      notifyObservers(oldValue: old, newValue: v);
+      try {
+        notifyObservers(oldValue: old, newValue: v);
+      } catch(e, stack) {
+        prine("Error during calling `notifyObservers` in set value of $this");
+        prine(e);
+        prine(stack);
+      }
       _isChanging = false;
     }
   }
