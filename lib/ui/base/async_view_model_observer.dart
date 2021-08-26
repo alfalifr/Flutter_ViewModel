@@ -7,7 +7,7 @@ import 'live_data.dart';
 import 'view_model.dart';
 
 
-class AsyncVmObserver<Vm extends AsyncVm, V> extends StatefulWidget {
+class AsyncVmObserver<Vm extends AsyncViewModel, V> extends StatefulWidget {
   final LiveData<V> Function(Vm) liveDataGetter;
   final Widget Function(BuildContext, V?) builder;
   final bool Function(V?)? predicate;
@@ -58,7 +58,7 @@ class AsyncVmObserver<Vm extends AsyncVm, V> extends StatefulWidget {
 
 }
 
-class _AsyncVmObserverState<Vm extends AsyncVm, V>
+class _AsyncVmObserverState<Vm extends AsyncViewModel, V>
     extends State<AsyncVmObserver<Vm, V>>
     implements Expirable
 {

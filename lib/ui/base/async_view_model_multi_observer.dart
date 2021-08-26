@@ -7,7 +7,7 @@ import 'live_data.dart';
 import 'view_model.dart';
 
 /// [AsyncVmObserver] that has ability to observe to multiple [Vm].[LiveData].
-class AsyncVmMultiObserver<Vm extends AsyncVm> extends StatefulWidget {
+class AsyncVmMultiObserver<Vm extends AsyncViewModel> extends StatefulWidget {
   final List<LiveData Function(Vm)> liveDataGetters;
 
   /// [List] in this lambda parameter has elements that returned by [liveDataGetters].
@@ -41,7 +41,7 @@ class AsyncVmMultiObserver<Vm extends AsyncVm> extends StatefulWidget {
 
 }
 
-class _AsyncVmMultiObserverState<Vm extends AsyncVm>
+class _AsyncVmMultiObserverState<Vm extends AsyncViewModel>
     extends State<AsyncVmMultiObserver<Vm>>
     implements Expirable
 {

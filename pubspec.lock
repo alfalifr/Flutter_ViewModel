@@ -88,6 +88,15 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.8.0"
+  print_dart:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: HEAD
+      resolved-ref: "4a95f8275727de819dcbe029c8dbd9cf56fc7a2a"
+      url: "git://github.com/alfalifr/print_dart"
+    source: git
+    version: "0.0.1"
   quiver:
     dependency: transitive
     description:

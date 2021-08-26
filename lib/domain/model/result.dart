@@ -22,6 +22,14 @@ class Success<T> extends Result<T> {
 
   @override
   List<Object?> get props => [code, data];
+
+  Success<T> copy({
+    int? code,
+    T? data,
+  }) => Success(
+    data ?? this.data,
+    code ?? this.code,
+  );
 }
 
 class Fail<T> extends Result<T> {

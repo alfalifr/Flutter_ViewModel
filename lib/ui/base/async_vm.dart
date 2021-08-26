@@ -1,7 +1,6 @@
 import 'package:async/async.dart';
 import 'package:viewmodel/domain/model/result.dart';
 import 'package:viewmodel/ui/base/live_data.dart';
-import 'package:viewmodel/util/_consoles.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:tuple/tuple.dart';
@@ -10,12 +9,10 @@ import '../../domain/model/wrapper.dart';
 import 'expirable.dart';
 import 'view_model.dart';
 
-//TODO 21 Juni 2021: Tambahi method doOnFail().
-
 /// [ViewModel] that is designed to manage various async process.
 /// It can [cancelJob] async process before launching the same process based on [String] key.
 /// It can can also invoke [_preAsyncTaskMap] before launching the async process.
-abstract class AsyncVm extends ViewModel {
+abstract class AsyncViewModel extends ViewModel {
 
   /// Its values, is a [Tuple2] of [CancelableOperation] and [Var]<bool>.
   /// The [Var]<bool> is for indication of parent async process [CancelableOperation]

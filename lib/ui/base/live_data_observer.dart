@@ -1,5 +1,4 @@
 import 'package:viewmodel/ui/base/expirable.dart';
-import 'package:viewmodel/util/_consoles.dart';
 import 'package:flutter/cupertino.dart';
 
 import 'live_data.dart';
@@ -99,7 +98,7 @@ class _LiveDataObserverState<T>
 
   @override
   void dispose() {
-    prind("LiveDataObser '$runtimeType' is disposed");
+    //prind("LiveDataObser '$runtimeType' is disposed");
     _isActive = false;
     if(isLiveDataOwner) {
       liveData.dispose();
