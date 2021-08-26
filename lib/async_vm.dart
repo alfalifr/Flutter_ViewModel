@@ -1,11 +1,11 @@
 import 'package:async/async.dart';
-import 'package:viewmodel/domain/model/result.dart';
-import 'package:viewmodel/ui/base/live_data.dart';
+import 'package:viewmodel/model/result.dart';
+import 'package:viewmodel/live_data.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:tuple/tuple.dart';
 
-import '../../domain/model/wrapper.dart';
+import 'model/wrapper.dart';
 import 'expirable.dart';
 import 'view_model.dart';
 

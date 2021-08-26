@@ -1,6 +1,6 @@
 
 
-import 'package:viewmodel/ui/base/view_model.dart';
+import 'package:viewmodel/view_model.dart';
 import 'package:flutter/material.dart';
 
 import 'expirable.dart';

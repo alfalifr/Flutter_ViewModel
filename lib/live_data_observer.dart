@@ -1,4 +1,4 @@
-import 'package:viewmodel/ui/base/expirable.dart';
+import 'package:viewmodel/expirable.dart';
 import 'package:flutter/cupertino.dart';
 
 import 'live_data.dart';

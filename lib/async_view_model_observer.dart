@@ -1,4 +1,4 @@
-import 'package:viewmodel/domain/model/result.dart';
+import 'package:viewmodel/model/result.dart';
 import 'package:flutter/material.dart';
 
 import 'async_vm.dart';

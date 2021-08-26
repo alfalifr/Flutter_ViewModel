@@ -1,4 +1,4 @@
-import 'package:viewmodel/ui/base/async_view_model_observer.dart';
+import 'package:viewmodel/async_view_model_observer.dart';
 import 'package:flutter/material.dart';
 
 import 'async_vm.dart';
